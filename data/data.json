@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1766175595429,
+      "email": "irzvk.pub@gmail.com",
+      "password": "$2b$10$5AUNixDwV5IBza2VBSTYkuSC76UPgDVERxNjWxIkqb5qD8axuChMm"
+    },
+    {
+      "id": 1766175614869,
+      "email": "irzvk.pub9@gmail.com",
+      "password": "$2b$10$anWYVmqjwquwUVBOsxrk/uq28l9Pdio1bh6C8/fXPB7QqZaxIDdLC"
+    },
+    {
+      "id": 1766178910274,
+      "email": "irzvk.pub99@gmail.com",
+      "password": "$2b$10$0hn9veRbxa87ojThC7qJleCV.HOsseiHrybg5HH8d0tTqR3ZWslXu"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1766178936899,
+      "title": "mgbhvfj,gc mh",
+      "completed": true,
+      "userId": 1766175614869
+    },
+    {
+      "id": 1766178949533,
+      "title": "gcdjgtfmj gfc,j ",
+      "completed": true,
+      "userId": 1766178910274
+    },
+    {
+      "id": 1766178953266,
+      "title": "mjfvmhbfvj",
+      "completed": false,
+      "userId": 1766178910274
+    }
+  ]
+}

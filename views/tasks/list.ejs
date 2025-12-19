@@ -1,0 +1,32 @@
+<%- include('../partials/header') %>
+
+<main>
+<h2>Twoje zadania</h2>
+
+<% if (tasks.length === 0) { %>
+    <p>Brak zadań</p>
+<% } %>
+
+<% tasks.forEach(task => { %>
+    <div class="task <%= task.completed ? 'done' : '' %>">
+
+        <form class="task-form" method="POST" action="/tasks/toggle/<%= task.id %>">
+            <label>
+                <input 
+                    type="checkbox" 
+                    onchange="this.form.submit()"
+                    <%= task.completed ? 'checked' : '' %>
+                >
+                <span><%= task.title %></span>
+            </label>
+        </form>
+
+        <div class="task-actions">
+            <a class="edit" href="/tasks/edit/<%= task.id %>">Edytuj</a>
+            <a class="delete" href="/tasks/delete/<%= task.id %>">Usuń</a>
+        </div>
+    </div>
+<% }) %>
+</main>
+
+<%- include('../partials/footer') %>

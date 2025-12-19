@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<main>
+<h2>Dodaj zadanie</h2>
+
+<form method="POST" action="/tasks/add">
+    <input type="text" name="title" placeholder="Treść zadania" required>
+    <button type="submit">Dodaj</button>
+</form>
+</main>
+
+
+
+<%- include('../partials/footer') %>

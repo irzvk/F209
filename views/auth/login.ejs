@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<h2>Logowanie</h2>
+
+<% if (error) { %>
+    <p class="error"><%= error %></p>
+<% } %>
+
+<% if (success) { %>
+    <p class="success"><%= success %></p>
+<% } %>
+
+<form method="POST" action="/auth/login">
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Hasło" required>
+    <button type="submit">Zaloguj</button>
+</form>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Błąd aplikacji</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="error-page">
+
+  <div class="error-box">
+    <h1>Wystąpił błąd</h1>
+
+    <p class="error-message">
+      <%= message %>
+    </p>
+
+    <div class="error-actions">
+      <a href="/login" class="btn">Logowanie</a>
+      <a href="/register" class="btn btn-secondary">Rejestracja</a>
+    </div>
+  </div>
+
+</body>
+</html>
